@@ -11,7 +11,7 @@ see the api on http://localhost:6000
 ## pipeline
 
 ### MongoDB
-- [ ] create connection with MongoDB
+- [x] create connection with MongoDB
 - [ ] create user model
 
 ### APIs
