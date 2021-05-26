@@ -14,7 +14,7 @@ see the api on http://localhost:6000
 
 ### MongoDB
 - [x] create connection with MongoDB
-- [ ] create user model
+- [x] create user model
 
 ### APIs
 - [ ] GET user
