@@ -20,6 +20,8 @@ see the api on http://localhost:6000
 - [ ] GET user
 - [ ] GET ALL create user
 - [ ] POST user 
+  - [ ] implement body values validation with yup;
+  - [ ] create new user if valid  
 - [ ] DELETE get
 
 ### Auth Flow
