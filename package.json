@@ -8,6 +8,7 @@
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "@koa/router": "^10.0.0",
+    "bcryptjs": "^2.4.3",
     "dotenv-safe": "8.2.0",
     "isomorphic-fetch": "2.2.1",
     "koa": "2.13.1",
@@ -16,8 +17,8 @@
     "koa-cors": "^0.0.16",
     "koa-logger": "3.2.1",
     "koa-router": "10.0.0",
-    "uuid": "8.3.2",
-    "mongoose": "5.11.18"
+    "mongoose": "5.11.18",
+    "uuid": "8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "7.13.0",
