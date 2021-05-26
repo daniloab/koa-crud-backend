@@ -6,6 +6,7 @@ import cors from "koa-cors";
 
 import { version } from "../package.json";
 import { userGet } from "./api/user/userGet";
+import { userPost } from "./api/user/userPost";
 
 const app = new Koa();
 
@@ -25,6 +26,7 @@ router.get("/api/version", (ctx) => {
 });
 
 router.get("/api/user/:id", userGet);
+router.post("/api/user", userPost);
 
 app.use(router.routes());
 
