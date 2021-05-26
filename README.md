@@ -2,8 +2,10 @@
 Backend implementation using koa js to build a REST API.
 
 ## run
-- yarn
+- run `yarn` to install dependencies
 
+- create a new file `.env` and fill it with the `.env.example` content
+ 
 - yarn start
 
 see the api on http://localhost:6000
