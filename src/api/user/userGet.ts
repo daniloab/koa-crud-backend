@@ -1,4 +1,43 @@
-export const userGet = (ctx) => {
+import User from "../../modules/user/UserModel";
+import { getObjectId } from "../../../test";
+const userSelection = {
+  _id: 1,
+  name: 1,
+  email: 1,
+};
+
+type UserPayload = {
+  _id: string;
+  name: string;
+  email: string;
+};
+
+type GetUserApiPayload = {
+  error: string | null;
+  user: UserPayload | null;
+};
+
+export const getUserApi = async (id: string): Promise<GetUserApiPayload> => {
+  const user = await User.findOne({
+    _id: getObjectId(id),
+  })
+    .select(userSelection)
+    .lean();
+
+  if (!user) {
+    return {
+      error: "User not found",
+      user: null,
+    };
+  }
+
+  return {
+    error: null,
+    user,
+  };
+};
+
+export const userGet = async (ctx) => {
   const { id } = ctx.params;
 
   try {
@@ -10,13 +49,15 @@ export const userGet = (ctx) => {
       return;
     }
 
-    // @todo api call
-    const user = {
-      _id: "5c42132aa591a2001ad46264",
-      name: "abc",
-      email: "test@test.com",
-    };
+    const { user, error } = await getUserApi(id);
 
+    if (error) {
+      ctx.status = 400;
+      ctx.body = {
+        message: error,
+      };
+      return;
+    }
     ctx.status = 200;
     ctx.body = {
       user,
@@ -29,7 +70,7 @@ export const userGet = (ctx) => {
 
     ctx.status = 500;
     ctx.body = {
-      message: "Unknown erro",
+      message: "Unknown error",
     };
   }
 };

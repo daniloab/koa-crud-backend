@@ -1,11 +1,6 @@
 import User from "../../modules/user/UserModel";
 import { validateUserApi } from "./userUtils";
-
-const userSelection = {
-  _id: 1,
-  name: 1,
-  email: 1,
-};
+import { getUserApi } from "./userGet";
 
 export const userPost = async (ctx) => {
   const { user = null } = ctx.request.body;
@@ -33,11 +28,15 @@ export const userPost = async (ctx) => {
       ...userValidated,
     }).save();
 
-    const userNormalized = await User.findOne({
-      _id: userNew._id,
-    })
-      .select(userSelection)
-      .lean();
+    const { user: userNormalized, error } = await getUserApi(userNew._id);
+
+    if (error) {
+      ctx.status = 400;
+      ctx.body = {
+        message: error,
+      };
+      return;
+    }
 
     ctx.status = 200;
     ctx.body = {

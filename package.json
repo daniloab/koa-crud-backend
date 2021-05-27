@@ -10,6 +10,8 @@
     "@koa/router": "^10.0.0",
     "bcryptjs": "^2.4.3",
     "dotenv-safe": "8.2.0",
+    "graphql": "^15.5.0",
+    "graphql-relay": "^0.6.0",
     "isomorphic-fetch": "2.2.1",
     "koa": "2.13.1",
     "koa-bodyparser": "^4.3.0",
