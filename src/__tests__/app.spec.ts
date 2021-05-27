@@ -2,9 +2,8 @@ import {
   clearDbAndRestartCounters,
   connectMongoose,
   disconnectMongoose,
+  createGetApiCall,
 } from "../../test";
-
-import { createGetApiCall } from "../../test";
 
 beforeAll(connectMongoose);
 

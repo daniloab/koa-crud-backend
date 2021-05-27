@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create user with success 1`] = `
+Object {
+  "user": Object {
+    "_id": "60af0d926fa981e9c07ac604",
+    "email": "test@test.com",
+    "name": "obi wan kenobi",
+  },
+}
+`;
+
+exports[`should return error if user email it was not passed 1`] = `
+Object {
+  "message": "email is a required field",
+}
+`;
+
+exports[`should return error if user it was not passed 1`] = `
+Object {
+  "message": "User is required",
+}
+`;
+
+exports[`should return error if user name it was not passed 1`] = `
+Object {
+  "message": "name is a required field",
+}
+`;
+
+exports[`should return error if user password it was not passed 1`] = `
+Object {
+  "message": "password is a required field",
+}
+`;

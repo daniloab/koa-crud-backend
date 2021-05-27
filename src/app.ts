@@ -25,6 +25,7 @@ router.get("/api/version", (ctx) => {
   };
 });
 
+// user api routes
 router.get("/api/user/:id", userGet);
 router.post("/api/user", userPost);
 
