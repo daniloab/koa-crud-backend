@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should get api version correctly 1`] = `
+Object {
+  "status": "OK",
+  "version": "1.0.0",
+}
+`;

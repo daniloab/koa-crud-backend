@@ -18,7 +18,8 @@
     "koa-logger": "3.2.1",
     "koa-router": "10.0.0",
     "mongoose": "5.11.18",
-    "uuid": "8.3.2"
+    "uuid": "8.3.2",
+    "yup": "^0.29.1"
   },
   "devDependencies": {
     "@babel/cli": "7.13.0",
@@ -32,6 +33,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.13.8",
     "@babel/plugin-proposal-optional-chaining": "7.13.8",
     "@babel/plugin-transform-async-to-generator": "7.13.0",
+    "@babel/polyfill": "7.7.0",
     "@babel/preset-env": "7.13.8",
     "@babel/preset-typescript": "7.13.0",
     "@types/babel__core": "7.1.12",
@@ -48,9 +50,15 @@
     "@types/koa__router": "^8.0.4",
     "@types/webpack-dev-server": "3.11.1",
     "@types/webpack-node-externals": "2.5.0",
+    "babel-jest": "^26.0.1",
     "babel-loader": "8.2.2",
     "clean-webpack-plugin": "3.0.0",
+    "jest": "25.1.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jest-junit": "12.0.0",
+    "mongodb-memory-server-global": "6.9.3",
     "reload-server-webpack-plugin": "1.0.1",
+    "supertest": "^6.1.3",
     "webpack": "5.24.2",
     "webpack-cli": "4.5.0",
     "webpack-dev-server": "3.11.2",
@@ -58,6 +66,7 @@
     "webpack-node-externals": "2.5.2"
   },
   "scripts": {
+    "jest": "jest",
     "start": "webpack --watch --progress --config webpack.config.js"
   }
 }
