@@ -3,7 +3,7 @@
 exports[`should create user with success 1`] = `
 Object {
   "user": Object {
-    "_id": "60af0d926fa981e9c07ac604",
+    "_id": "60af1420a414061275b43eb6",
     "email": "test@test.com",
     "name": "obi wan kenobi",
   },
