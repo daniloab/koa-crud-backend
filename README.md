@@ -19,9 +19,10 @@ see the api on http://localhost:6000
 ### APIs
 - [ ] GET user
 - [ ] GET ALL create user
-- [ ] POST user https://github.com/daniloab/koa-crud-backend/issues/10
-  - [ ] implement body values validation with yup;
-  - [ ] create new user if valid  
+- [x] POST user https://github.com/daniloab/koa-crud-backend/issues/10
+  - [x] implement body values validation with yup;
+  - [x] create new user if valid  
+  - [ ] validate if user exists and return
 - [ ] DELETE get
 
 ### Auth Flow
