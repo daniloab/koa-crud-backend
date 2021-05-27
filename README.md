@@ -17,7 +17,7 @@ see the api on http://localhost:6000
 - [x] create user model
 
 ### APIs
-- [ ] GET user
+- [x] GET user
 - [ ] GET ALL create user
 - [x] POST user https://github.com/daniloab/koa-crud-backend/issues/10
   - [x] implement body values validation with yup;
