@@ -17,9 +17,45 @@ type GetUserApiPayload = {
   user: UserPayload | null;
 };
 
-export const getUserApi = async (id: string): Promise<GetUserApiPayload> => {
+const getConditions = (id?: string, email?: string) => {
+  if (id) {
+    return {
+      error: null,
+      conditions: {
+        _id: getObjectId(id),
+      },
+    };
+  }
+
+  if (email) {
+    return {
+      error: null,
+      conditions: {
+        email,
+      },
+    };
+  }
+
+  return {
+    error: "Invalid user",
+  };
+};
+
+export const getUserApi = async (
+  id?: string,
+  email?: string
+): Promise<GetUserApiPayload> => {
+  const { conditions, error } = getConditions(id, email);
+
+  if (error) {
+    return {
+      error,
+      user: null,
+    };
+  }
+
   const user = await User.findOne({
-    _id: getObjectId(id),
+    ...conditions,
   })
     .select(userSelection)
     .lean();

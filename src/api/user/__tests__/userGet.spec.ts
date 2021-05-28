@@ -3,6 +3,7 @@ import {
   connectMongoose,
   disconnectMongoose,
   createGetApiCall,
+  sanitizeTestObject,
 } from "../../../../test";
 import { createUser } from "../../../modules/user/fixtures/createUser";
 
@@ -33,5 +34,5 @@ it("should return user by id", async () => {
   expect(response.status).toBe(200);
   expect(response.body.user.name).toBe(user.name);
   expect(response.body.user.email).toBe(user.email);
-  expect(response.body).toMatchSnapshot();
+  expect(sanitizeTestObject(response.body)).toMatchSnapshot();
 });

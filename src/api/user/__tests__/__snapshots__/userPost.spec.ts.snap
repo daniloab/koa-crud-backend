@@ -3,7 +3,7 @@
 exports[`should create user with success 1`] = `
 Object {
   "user": Object {
-    "_id": "60af1420a414061275b43eb6",
+    "_id": "ObjectId",
     "email": "test@test.com",
     "name": "obi wan kenobi",
   },
@@ -31,5 +31,11 @@ Object {
 exports[`should return error if user password it was not passed 1`] = `
 Object {
   "message": "password is a required field",
+}
+`;
+
+exports[`should return error is email is already in use 1`] = `
+Object {
+  "message": "Email already in use",
 }
 `;
