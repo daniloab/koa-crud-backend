@@ -23,6 +23,16 @@ export const userPost = async (ctx) => {
     return;
   }
 
+  const { user: userExist } = await getUserApi(null, userValidated.email);
+
+  if (userExist) {
+    ctx.status = 400;
+    ctx.body = {
+      message: "Email already in use",
+    };
+    return;
+  }
+
   try {
     const userNew = await new User({
       ...userValidated,
