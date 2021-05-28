@@ -1,6 +1,6 @@
 import User from "../../modules/user/UserModel";
 import { getObjectId } from "../../../test";
-const userSelection = {
+export const userSelection = {
   _id: 1,
   name: 1,
   email: 1,
@@ -94,6 +94,7 @@ export const userGet = async (ctx) => {
       };
       return;
     }
+
     ctx.status = 200;
     ctx.body = {
       user,

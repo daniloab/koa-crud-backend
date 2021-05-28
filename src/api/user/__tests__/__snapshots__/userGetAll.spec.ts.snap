@@ -1,0 +1,603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should paginate skipping 90 users and limit 10 1`] = `
+Object {
+  "pageInfo": Object {
+    "hasNextPage": true,
+    "hasPreviousPage": true,
+    "limit": 10,
+    "skip": 90,
+    "totalCount": 110,
+  },
+  "users": Array [
+    Object {
+      "_id": "ObjectId",
+      "email": "user91@test.com",
+      "name": "user#92",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user92@test.com",
+      "name": "user#93",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user93@test.com",
+      "name": "user#94",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user94@test.com",
+      "name": "user#95",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user95@test.com",
+      "name": "user#96",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user96@test.com",
+      "name": "user#97",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user97@test.com",
+      "name": "user#98",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user98@test.com",
+      "name": "user#99",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user99@test.com",
+      "name": "user#100",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user100@test.com",
+      "name": "user#101",
+    },
+  ],
+}
+`;
+
+exports[`should return 100 users if no skip limit is not specific 1`] = `
+Object {
+  "pageInfo": Object {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+    "limit": 100,
+    "skip": 0,
+    "totalCount": 110,
+  },
+  "users": Array [
+    Object {
+      "_id": "ObjectId",
+      "email": "user1@test.com",
+      "name": "user#2",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user2@test.com",
+      "name": "user#3",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user3@test.com",
+      "name": "user#4",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user4@test.com",
+      "name": "user#5",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user5@test.com",
+      "name": "user#6",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user6@test.com",
+      "name": "user#7",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user7@test.com",
+      "name": "user#8",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user8@test.com",
+      "name": "user#9",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user9@test.com",
+      "name": "user#10",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user10@test.com",
+      "name": "user#11",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user11@test.com",
+      "name": "user#12",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user12@test.com",
+      "name": "user#13",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user13@test.com",
+      "name": "user#14",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user14@test.com",
+      "name": "user#15",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user15@test.com",
+      "name": "user#16",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user16@test.com",
+      "name": "user#17",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user17@test.com",
+      "name": "user#18",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user18@test.com",
+      "name": "user#19",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user19@test.com",
+      "name": "user#20",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user20@test.com",
+      "name": "user#21",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user21@test.com",
+      "name": "user#22",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user22@test.com",
+      "name": "user#23",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user23@test.com",
+      "name": "user#24",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user24@test.com",
+      "name": "user#25",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user25@test.com",
+      "name": "user#26",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user26@test.com",
+      "name": "user#27",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user27@test.com",
+      "name": "user#28",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user28@test.com",
+      "name": "user#29",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user29@test.com",
+      "name": "user#30",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user30@test.com",
+      "name": "user#31",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user31@test.com",
+      "name": "user#32",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user32@test.com",
+      "name": "user#33",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user33@test.com",
+      "name": "user#34",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user34@test.com",
+      "name": "user#35",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user35@test.com",
+      "name": "user#36",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user36@test.com",
+      "name": "user#37",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user37@test.com",
+      "name": "user#38",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user38@test.com",
+      "name": "user#39",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user39@test.com",
+      "name": "user#40",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user40@test.com",
+      "name": "user#41",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user41@test.com",
+      "name": "user#42",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user42@test.com",
+      "name": "user#43",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user43@test.com",
+      "name": "user#44",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user44@test.com",
+      "name": "user#45",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user45@test.com",
+      "name": "user#46",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user46@test.com",
+      "name": "user#47",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user47@test.com",
+      "name": "user#48",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user48@test.com",
+      "name": "user#49",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user49@test.com",
+      "name": "user#50",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user50@test.com",
+      "name": "user#51",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user51@test.com",
+      "name": "user#52",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user52@test.com",
+      "name": "user#53",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user53@test.com",
+      "name": "user#54",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user54@test.com",
+      "name": "user#55",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user55@test.com",
+      "name": "user#56",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user56@test.com",
+      "name": "user#57",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user57@test.com",
+      "name": "user#58",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user58@test.com",
+      "name": "user#59",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user59@test.com",
+      "name": "user#60",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user60@test.com",
+      "name": "user#61",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user61@test.com",
+      "name": "user#62",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user62@test.com",
+      "name": "user#63",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user63@test.com",
+      "name": "user#64",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user64@test.com",
+      "name": "user#65",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user65@test.com",
+      "name": "user#66",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user66@test.com",
+      "name": "user#67",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user67@test.com",
+      "name": "user#68",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user68@test.com",
+      "name": "user#69",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user69@test.com",
+      "name": "user#70",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user70@test.com",
+      "name": "user#71",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user71@test.com",
+      "name": "user#72",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user72@test.com",
+      "name": "user#73",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user73@test.com",
+      "name": "user#74",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user74@test.com",
+      "name": "user#75",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user75@test.com",
+      "name": "user#76",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user76@test.com",
+      "name": "user#77",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user77@test.com",
+      "name": "user#78",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user78@test.com",
+      "name": "user#79",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user79@test.com",
+      "name": "user#80",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user80@test.com",
+      "name": "user#81",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user81@test.com",
+      "name": "user#82",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user82@test.com",
+      "name": "user#83",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user83@test.com",
+      "name": "user#84",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user84@test.com",
+      "name": "user#85",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user85@test.com",
+      "name": "user#86",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user86@test.com",
+      "name": "user#87",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user87@test.com",
+      "name": "user#88",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user88@test.com",
+      "name": "user#89",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user89@test.com",
+      "name": "user#90",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user90@test.com",
+      "name": "user#91",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user91@test.com",
+      "name": "user#92",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user92@test.com",
+      "name": "user#93",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user93@test.com",
+      "name": "user#94",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user94@test.com",
+      "name": "user#95",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user95@test.com",
+      "name": "user#96",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user96@test.com",
+      "name": "user#97",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user97@test.com",
+      "name": "user#98",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user98@test.com",
+      "name": "user#99",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user99@test.com",
+      "name": "user#100",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user100@test.com",
+      "name": "user#101",
+    },
+  ],
+}
+`;
+
+exports[`should return a list of users 1`] = `
+Object {
+  "pageInfo": Object {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+    "limit": 100,
+    "skip": 0,
+    "totalCount": 2,
+  },
+  "users": Array [
+    Object {
+      "_id": "ObjectId",
+      "email": "user0@test.com",
+      "name": "User 0",
+    },
+    Object {
+      "_id": "ObjectId",
+      "email": "user1@test.com",
+      "name": "User 1",
+    },
+  ],
+}
+`;
