@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should delete an user 1`] = `
+Object {
+  "user": Object {
+    "_id": "ObjectId",
+    "email": "user1@test.com",
+    "name": "User 1",
+    "removedAt": "FROZEN-REMOVEDAT",
+  },
+}
+`;
+
+exports[`should return error if id it is not valid 1`] = `
+Object {
+  "message": "User not found",
+}
+`;
+
+exports[`should return error if user it was not found 1`] = `
+Object {
+  "message": "User not found",
+}
+`;
+
+exports[`should return user not found for a user already deleted 1`] = `
+Object {
+  "message": "User not found",
+}
+`;

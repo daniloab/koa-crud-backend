@@ -8,6 +8,7 @@ import { version } from "../package.json";
 import { userGet } from "./api/user/userGet";
 import { userPost } from "./api/user/userPost";
 import { userGetAll } from "./api/user/userGetAll";
+import { userDelete } from "./api/user/userDelete";
 
 const app = new Koa();
 
@@ -30,6 +31,7 @@ router.get("/api/version", (ctx) => {
 router.post("/api/user", userPost);
 router.get("/api/user", userGetAll);
 router.get("/api/user/:id", userGet);
+router.delete("/api/user/:id", userDelete);
 
 app.use(router.routes());
 

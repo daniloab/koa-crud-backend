@@ -4,6 +4,7 @@ export const userSelection = {
   _id: 1,
   name: 1,
   email: 1,
+  removedAt: 1,
 };
 
 type UserPayload = {

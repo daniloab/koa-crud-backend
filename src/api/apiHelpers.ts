@@ -1,5 +1,6 @@
 import { Model, Types } from "mongoose";
 import { Context } from "koa";
+import { getObjectId } from "../../test";
 
 export const getSkipAndLimit = (ctx: Context) => {
   const { skip = 0, limit = 100 } = ctx.query;
@@ -73,15 +74,10 @@ export const getPageInfo = async (ctx: Context, model: Model): PageInfo => {
   };
 };
 
-export const checkObjectId = (id) => {
+export const checkObjectId = (id: string) => {
   if (!Types.ObjectId.isValid(id)) {
-    return {
-      error: true,
-    };
+    return null;
   }
 
-  return {
-    error: false,
-    _id: id,
-  };
+  return getObjectId(id);
 };
