@@ -27,6 +27,7 @@ see the api on http://localhost:6000
 
 ### Auth Flow
 - [x] login
+- [ ] validate user token
 - [ ] sign up
 
 ## follow me
