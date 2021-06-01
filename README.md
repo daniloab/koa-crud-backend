@@ -26,8 +26,8 @@ see the api on http://localhost:6000
 - [x] DELETE user
 
 ### Auth Flow
+- [x] login
 - [ ] sign up
-- [ ] login
 
 ## follow me
 [Twitter](https://www.twitter.com/daniloab_)
