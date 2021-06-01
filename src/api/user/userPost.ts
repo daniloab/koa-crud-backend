@@ -3,6 +3,7 @@ import { validateUserApi } from "./userUtils";
 import { getUserApi } from "./userGet";
 
 export const userPost = async (ctx) => {
+  console.log("ctx.request.body", ctx.request.body);
   const { user = null } = ctx.request.body;
 
   if (!user) {

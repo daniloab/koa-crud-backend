@@ -23,7 +23,7 @@ see the api on http://localhost:6000
   - [x] implement body values validation with yup;
   - [x] create new user if valid  
   - [x] validate if user exists and return
-- [ ] DELETE get
+- [x] DELETE user
 
 ### Auth Flow
 - [ ] sign up
