@@ -4,10 +4,16 @@ exports[`should delete an user 1`] = `
 Object {
   "user": Object {
     "_id": "ObjectId",
-    "email": "user1@test.com",
-    "name": "User 1",
+    "email": "user2@test.com",
+    "name": "User 2",
     "removedAt": "FROZEN-REMOVEDAT",
   },
+}
+`;
+
+exports[`should return error if authorization header does not exist 1`] = `
+Object {
+  "message": "Unauthorized",
 }
 `;
 

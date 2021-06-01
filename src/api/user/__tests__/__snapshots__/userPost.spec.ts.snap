@@ -6,7 +6,14 @@ Object {
     "_id": "ObjectId",
     "email": "test@test.com",
     "name": "obi wan kenobi",
+    "removedAt": "EMPTY",
   },
+}
+`;
+
+exports[`should return error if authorization header does not exist 1`] = `
+Object {
+  "message": "Unauthorized",
 }
 `;
 
