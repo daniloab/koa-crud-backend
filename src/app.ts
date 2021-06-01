@@ -11,16 +11,21 @@ import { userGetAll } from "./api/user/userGetAll";
 import { userDelete } from "./api/user/userDelete";
 
 import { authLogin } from "./api/auth/authLogin";
+
+import { auth } from "./auth/auth";
 const app = new Koa();
 
 const router = new Router();
+
+const routerAuth = new Router();
+const routerOpen = new Router();
 
 app.use(logger());
 app.use(cors({ maxAge: 86400 }));
 app.use(bodyParser());
 
 //Open APIS (APIs that dont need to Authenticate)
-router.get("/api/version", (ctx) => {
+routerOpen.get("/api/version", (ctx) => {
   ctx.status = 200;
   ctx.body = {
     status: "OK",
@@ -29,15 +34,21 @@ router.get("/api/version", (ctx) => {
 });
 
 // auth routes
-router.post("/api/auth/login", authLogin);
+routerOpen.post("/api/auth/login", authLogin);
+
+app.use(routerOpen.routes());
+
+//Authorized APIs
+//After, APIS need to be Authenticated
+routerAuth.use(auth);
 
 // user api routes
-router.post("/api/user", userPost);
-router.get("/api/user", userGetAll);
-router.get("/api/user/:id", userGet);
-router.delete("/api/user/:id", userDelete);
+routerAuth.post("/api/user", userPost);
+routerAuth.get("/api/user", userGetAll);
+routerAuth.get("/api/user/:id", userGet);
+routerAuth.delete("/api/user/:id", userDelete);
 
-app.use(router.routes());
+app.use(routerAuth.routes());
 
 // Default not found 404
 app.use((ctx) => {

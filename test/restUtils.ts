@@ -10,7 +10,7 @@ type ApiArgs = {
 };
 
 export const createApiCall = async (args: ApiArgs) => {
-  const { url, payload: body } = args;
+  const { url, payload: body, authorization } = args;
 
   const payload = {
     ...body,
@@ -21,6 +21,7 @@ export const createApiCall = async (args: ApiArgs) => {
     .set({
       Accept: "application/json",
       "Content-Type": "application/json",
+      ...(authorization ? { authorization } : {}),
     })
     .send(JSON.stringify(payload));
 
@@ -28,13 +29,14 @@ export const createApiCall = async (args: ApiArgs) => {
 };
 
 export const createGetApiCall = async (args: ApiArgs) => {
-  const { url } = args;
+  const { url, authorization } = args;
 
   const response = await request(app.callback())
     .get(url)
     .set({
       Accept: "application/json",
       "Content-Type": "application/json",
+      ...(authorization ? { authorization } : {}),
     })
     .send();
 
@@ -42,13 +44,14 @@ export const createGetApiCall = async (args: ApiArgs) => {
 };
 
 export const createDeleteApiCall = async (args: ApiArgs) => {
-  const { url } = args;
+  const { url, authorization } = args;
 
   const response = await request(app.callback())
     .delete(url)
     .set({
       Accept: "application/json",
       "Content-Type": "application/json",
+      ...(authorization ? { authorization } : {}),
     })
     .send();
 

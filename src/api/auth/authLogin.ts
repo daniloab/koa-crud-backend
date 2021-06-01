@@ -1,5 +1,5 @@
 import User from "../../modules/user/UserModel";
-import { generateToken } from "./generateToken";
+import { generateToken } from "../../auth/generateToken";
 
 export const authLogin = async (ctx) => {
   const { email, password } = ctx.request.body;
