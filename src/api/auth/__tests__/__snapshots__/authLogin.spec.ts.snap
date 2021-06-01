@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return error if email it was not passed 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return error if login and password it was not passed 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return error if password it was not passed 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return error if user doest not exist 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return for wrong email 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return for wrong password 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
+
+exports[`should return token for user email and password valid 1`] = `
+Object {
+  "message": "User authenticated with success",
+  "token": "FROZEN-TOKEN",
+}
+`;
+
+exports[`should return user not found if user is already removed 1`] = `
+Object {
+  "message": "Email or password incorrect",
+}
+`;
