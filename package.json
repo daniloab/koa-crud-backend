@@ -21,6 +21,7 @@
     "koa-logger": "3.2.1",
     "koa-router": "10.0.0",
     "mongoose": "5.11.18",
+    "swagger-jsdoc": "^6.1.0",
     "uuid": "8.3.2",
     "yup": "^0.29.1"
   },
@@ -70,6 +71,9 @@
   },
   "scripts": {
     "jest": "jest",
-    "start": "webpack --watch --progress --config webpack.config.js"
+    "start": "webpack --watch --progress --config webpack.config.js",
+    "swagger": "yarn swagger:json && yarn swagger:yml",
+    "swagger:json": "yarn swagger-jsdoc -d src/swagger/config.js 'src/api/**/*.yml' -o ./src/swagger.json",
+    "swagger:yml": "yarn swagger-jsdoc -d src/swagger/config.js 'src/api/**/*.yml' -o ./src/swagger.yml"
   }
 }
