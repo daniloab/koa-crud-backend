@@ -1,0 +1,39 @@
+/api/user/{id}:
+  get:
+    tags:
+      - users
+    summary: Get one user
+    parameters:
+      - name: id
+        in: path
+        description: platform ID or email
+        required: true
+        schema:
+          type: string
+    responses:
+      '200':
+        description: The user retrieve using the given ID
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                user:
+                  type: object
+                  $ref: '#/components/schemas/User'
+      '400':
+        description: An error message
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                message:
+                  type: string
+                user:
+                  type: object
+                  $ref: '#/components/schemas/User'
